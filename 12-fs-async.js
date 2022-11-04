@@ -4,14 +4,14 @@ const {readFile,writeFile} = require('fs')
 
 console.log(second)*/
 console.log('Start')
-readFile('./content/second.txt','utf8', (err,result) => {
+readFile('./HomeWork/content/second.txt','utf8', (err,result) => {
     if (err) {
         console.log(err)
     return
     }
     const second = result;
 
-    readFile('./content/first.txt','utf8', (err,result) => {
+    readFile('./HomeWork/content/first.txt','utf8', (err,result) => {
         if (err) {
             console.log(err)
         return
@@ -21,7 +21,7 @@ readFile('./content/second.txt','utf8', (err,result) => {
 
 
 writeFile (
-    './content/result_async.txt',
+    './HomeWork/content/result_async.txt',
     `Write : ${first}, ${second}`,
     (err,result)=>{
         if(err){
